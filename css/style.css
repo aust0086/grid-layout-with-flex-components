@@ -31,7 +31,11 @@ body {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
 }
-
+.emoji{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .emoji:nth-child(1) {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -51,7 +55,19 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 }
-.icon{
+
+.icon {
     display: flex;
     justify-content: center;
+    order: 1;
+}
+h2{
+    order: 2;
+}
+p{
+    order: 3;
+}
+ a{
+    display: flex;
+    order: 4;
 }
